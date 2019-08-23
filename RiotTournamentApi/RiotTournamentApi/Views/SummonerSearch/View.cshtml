@@ -1,0 +1,90 @@
+﻿@model RiotTournamentApi.Models.LeagueEntryDTO
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h2>View</h2>
+
+<div>
+    <h4>LeagueEntryDTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.QueueType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.QueueType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SummonerName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SummonerName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HotStreak)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HotStreak)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Wins)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Wins)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Losses)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Losses)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tier)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tier)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LeagueId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LeagueId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Inactive)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Inactive)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FreshBlood)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FreshBlood)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SummonerId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SummonerId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LeaguePoints)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LeaguePoints)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
